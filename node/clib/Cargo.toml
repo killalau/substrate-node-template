@@ -1,0 +1,16 @@
+[package]
+authors = ['']
+description = ''
+edition = '2018'
+# homepage = 'https://substrate.dev'
+license = 'Unlicense'
+name = 'clib'
+# repository = 'https://github.com/substrate-developer-hub/substrate-node-template/'
+version = '2.0.1'
+
+[build-dependencies]
+dunce = "0.1.1"
+
+[dependencies]
+# local dependencies
+libc = "0.2"
