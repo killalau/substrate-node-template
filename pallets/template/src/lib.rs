@@ -7,6 +7,9 @@
 use frame_support::{decl_module, decl_storage, decl_event, decl_error, dispatch, traits::Get};
 use frame_system::ensure_signed;
 
+
+extern crate clib;
+
 #[cfg(test)]
 mod mock;
 
@@ -73,7 +76,11 @@ decl_module! {
 			let who = ensure_signed(origin)?;
 
 			// Update storage.
-			Something::put(something);
+			let mut smt: u32 = something;
+			unsafe {
+				smt = clib::double_uint(smt);
+			}
+			Something::put(smt);
 
 			// Emit an event.
 			Self::deposit_event(RawEvent::SomethingStored(something, who));
