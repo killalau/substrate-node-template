@@ -4,7 +4,7 @@ description = ''
 edition = '2018'
 # homepage = 'https://substrate.dev'
 license = 'Unlicense'
-name = 'clib'
+name = 'cfun'
 # repository = 'https://github.com/substrate-developer-hub/substrate-node-template/'
 version = '2.0.1'
 
@@ -13,4 +13,4 @@ dunce = "0.1.1"
 
 [dependencies]
 # local dependencies
-libc = "0.2"
+# libc = "0.2"
