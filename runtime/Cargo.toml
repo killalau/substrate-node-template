@@ -25,6 +25,9 @@ hex-literal = { optional = true, version = '0.3.1' }
 serde = { features = ['derive'], optional = true, version = '1.0.119' }
 
 # local dependencies
+sp-runtime-interface = { version = "2.0.1", default-features = false}
+cfun = { path = '../node/cfun', default-features = false, version = '2.0.1', optional = true }
+cint = { path = '../node/cint', default-features = false, version = '2.0.1' }
 pallet-template = { path = '../pallets/template', default-features = false, version = '2.0.1' }
 
 # Substrate dependencies
@@ -93,4 +96,8 @@ std = [
     'sp-std/std',
     'sp-transaction-pool/std',
     'sp-version/std',
+
+    'sp-runtime-interface/std',
+    'cfun',
+    'cint/std',
 ]

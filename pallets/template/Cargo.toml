@@ -23,7 +23,9 @@ frame-support = { default-features = false, version = '2.0.1' }
 frame-system = { default-features = false, version = '2.0.1' }
 
 # local dependencies
-clib = { path = '../../node/clib', default-features = false, version = '2.0.1' }
+sp-runtime-interface = { version = "2.0.1", default-features = false}
+cfun = { path = '../../node/cfun', default-features = false, version = '2.0.1', optional = true }
+cint = { path = '../../node/cint', default-features = false, version = '2.0.1'}
 
 [dev-dependencies]
 sp-core = { default-features = false, version = '2.0.1' }
@@ -36,4 +38,8 @@ std = [
     'codec/std',
     'frame-support/std',
     'frame-system/std',
+
+    'sp-runtime/std',
+    'cfun',
+    'cint/std',
 ]

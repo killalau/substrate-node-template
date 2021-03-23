@@ -778,6 +778,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "cint"
+version = "2.0.1"
+dependencies = [
+ "cfun",
+ "sp-runtime-interface",
+]
+
+[[package]]
 name = "clang-sys"
 version = "0.29.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3551,6 +3559,7 @@ name = "node-template-runtime"
 version = "2.0.1"
 dependencies = [
  "cfun",
+ "cint",
  "frame-benchmarking",
  "frame-executive",
  "frame-support",
@@ -3576,6 +3585,7 @@ dependencies = [
  "sp-inherents",
  "sp-offchain",
  "sp-runtime",
+ "sp-runtime-interface",
  "sp-session",
  "sp-std",
  "sp-transaction-pool",
@@ -3881,12 +3891,15 @@ dependencies = [
 name = "pallet-template"
 version = "2.0.1"
 dependencies = [
+ "cfun",
+ "cint",
  "frame-support",
  "frame-system",
  "parity-scale-codec",
  "sp-core",
  "sp-io",
  "sp-runtime",
+ "sp-runtime-interface",
 ]
 
 [[package]]
